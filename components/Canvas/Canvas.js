@@ -99,6 +99,8 @@ useEffect(() => {
     canvas.style.height = `${window.innerHeight}px`;
     const ctx = canvas.getContext('2d');
     ctx.scale(2, 2);
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
     if (!props.changeItem) {
       ctx.lineCap = props.lineCap;
       ctx.strokeStyle = props.strokeStyle;
