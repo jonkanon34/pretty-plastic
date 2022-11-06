@@ -101,6 +101,9 @@
     margin: 5px 20px;
     cursor: pointer;
 }
+.tools-section .tools-btn .tools .shape-image img.img_28 {
+    height: 105px;
+}
 
 .tools-section .tools-btn .btns button {
     width: 90%;
@@ -153,6 +156,9 @@
     .tools-section .tools-btn .tools .shape-image img {
         width: 40px;
         height: 40px;
+    }
+    .tools-section .tools-btn .tools .shape-image img.img_28 {
+        height: 70px;
     }
     .tools-section .tools-btn .tools .shape-image.mobile-shape {
         display: flex !important;

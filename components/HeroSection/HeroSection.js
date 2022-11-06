@@ -75,9 +75,9 @@ const HeroSection = () => {
 
     const download = () => {
         var canvas = document.getElementById('canvas');
-        var url = canvas.toDataURL("image/jpeg"); 
+        var url = canvas.toDataURL("image/png"); 
         var link = document.createElement('a');
-        link.download = 'paint.jpg';
+        link.download = 'paint.png';
         link.href = url;
         link.click();
     }
@@ -149,6 +149,7 @@ const HeroSection = () => {
                                     } 
                                     src={image.src} 
                                     alt="" 
+                                    className={`${image.src.split('/media/')[1].split('.')[0]}`}
                                 />
                             </React.Fragment>
                         ))}
@@ -162,6 +163,7 @@ const HeroSection = () => {
                                     } 
                                     src={image.src} 
                                     alt="" 
+                                    className={`${image.src.split('/media/')[1].split('.')[0]}`}
                                 />
                             </React.Fragment>
                         ))}
