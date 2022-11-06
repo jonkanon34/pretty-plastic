@@ -19,7 +19,7 @@ const Canvas = (props) => {
           pageX-(props.lineWidth/2), 
           pageY-(props.lineWidth/2), 
           props.lineWidth, 
-          props.lineWidth
+          props.image==='/images/img_28.png' ? props.lineWidth*2 : props.lineWidth
         );
         ctxRef.current.stroke();
       }
@@ -37,7 +37,7 @@ const Canvas = (props) => {
           offsetX-(props.lineWidth/2), 
           offsetY-(props.lineWidth/2), 
           props.lineWidth, 
-          props.lineWidth
+          props.image==='/images/img_28.png' ? props.lineWidth*2 : props.lineWidth
         );
         ctxRef.current.stroke();
       }
@@ -64,7 +64,7 @@ const Canvas = (props) => {
           pageX-(props.lineWidth/2), 
           pageY-(props.lineWidth/2), 
           props.lineWidth, 
-          props.lineWidth
+          props.image==='/images/img_28.png' ? props.lineWidth*2 : props.lineWidth
         );
         ctxRef.current.stroke();    
       }
@@ -80,7 +80,7 @@ const Canvas = (props) => {
           offsetX-(props.lineWidth/2), 
           offsetY-(props.lineWidth/2), 
           props.lineWidth, 
-          props.lineWidth
+          props.image==='/images/img_28.png' ? props.lineWidth*2 : props.lineWidth
         );
         ctxRef.current.stroke();    
       }
